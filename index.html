@@ -2,41 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fork Me! FCC: Test Suite Template</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <nav id="navbar"> 
+    <nav id="navbar">
       <ul>
-        <li> Project </li>
-        <li> About </li>
-        <li> Contact </li>
+        <li><a href="#projects">project</a></li>
+        <li><a href="#about">about</a></li>
+        <li>contact</li>
       </ul>
     </nav>
+
     <section id="welcome-section">
       <h1>Welcome</h1>
     </section>
 
     <section id="projects">
-      
-      <a href="https://en.wikipedia.org/wiki/Microsoft_Windows">  
-        <div class="project-tile"> 
-        <img src="https://tr1.cbsistatic.com/hub/i/r/2015/03/25/b06b7a00-711d-4803-a242-58279f992dc4/resize/1200x/dcfa02092a1e3836aaa720b1960a0038/win10.png">
-        <p> Windows Project </p>
-        </div> 
+      <a href="https://en.wikipedia.org/wiki/Microsoft_Windows">
+        <div class="project-tile">
+          <img
+            src="https://tr1.cbsistatic.com/hub/i/r/2015/03/25/b06b7a00-711d-4803-a242-58279f992dc4/resize/1200x/dcfa02092a1e3836aaa720b1960a0038/win10.png"
+          />
+          <p>Windows Project</p>
+        </div>
       </a>
-      
-      <div class="project-tile"> </div>
-      <div class="project-tile">3</div>
+
+      <a href="https://www.gatesnotes.com/Philanthropy">
+        <div class="project-tile">
+          <img
+            src="https://images.vexels.com/media/users/3/157970/isolated/preview/c156b4270aea292b9b335dd463ea17eb-earth-planet-icon-earth-icon-by-vexels.png"
+            alt="Planet Earth"
+          />
+          <p>Philanthropy</p>
+        </div>
+      </a>
+
+      <a href="https://www.gatesnotes.com/Books">
+        <div class="project-tile">
+          <img
+            src="http://files.softicons.com/download/business-icons/mixed-icons-by-simiographics/png/512/Book.png"
+            alt="Book"
+          />
+          <p>Books</p>
+        </div>
+      </a>
+
       <div class="project-tile">4</div>
+    </section>
+
+    <section id="about">
+      <p>
+        <a
+          href="https://github.com/TheOneAndOnlyBillGates"
+          target="_blank"
+          id="profile-link"
+          >Profile</a
+        >
+      </p>
     </section>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/index.js"></script>
     <script>
-      const projectName = 'portfolio';
+      const projectName = "portfolio";
     </script>
   </body>
 </html>
