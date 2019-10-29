@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+:root {
+  --welcome-section-height: 25vh;
+}
+
+#welcome-section {
+  height: var(--welcome-section-height);
+  width: 100%;
+  background: tomato;
+  padding: 2em 0;
+}
+
+#welcome-section h1 {
+  text-align: center;
+  justify-content: center;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: calc(100vh - var(--welcome-section-height));
+}
+
+@media (max-width: 600px) {
+  #projects {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+.project-tile {
+  min-height: 200px;
+  background: gray;
+}
