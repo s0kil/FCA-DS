@@ -7,20 +7,25 @@ a {
   color: #dee2e6;
 }
 
-p, h1, li {
+p,
+h1,
+li {
   font-family: "Roboto", sans-serif;
 }
 
-li{
+li {
   font-size: 1.4em;
+}
+
+.bar {
+  background: #0c8599;
+  width: 100%;
+  height: 4vh;
 }
 
 #navbar {
   position: fixed;
   top: 0;
-  background: #0c8599;
-  width: 100%;
-  height: 4vh;
 }
 
 #navbar ul {
@@ -39,8 +44,6 @@ li{
   /* color: #dee2e6; */
 }
 
-
-
 #welcome-section {
   height: 100vh;
   width: 100%;
@@ -54,7 +57,6 @@ li{
   color: #dee2e6;
 }
 
-
 #projects {
   padding: 2em;
   display: grid;
@@ -62,13 +64,6 @@ li{
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 2em;
   background: #ff922b;
-}
-
-@media (max-width: 600px) {
-  #projects {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
 }
 
 .project-tile {
@@ -83,16 +78,15 @@ li{
   padding-bottom: 1em;
 }
 
-#projects a{
+#projects a {
   color: #343a40;
 }
 
-
 .project-tile img {
-  max-width: 100%;
+  max-width: 80%;
   max-height: 300px;
-  display: block;
   padding: 2em 2em 1em 2em;
+  display: block;
   margin: auto;
 }
 
@@ -100,14 +94,21 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: #0c8599;
-  
+  align-content: center;
 }
 
 footer p {
+  margin: 0;
   text-align: center;
   font-size: 1.3em;
 }
 
-footer a {
-  color: #343a40;
+@media (max-width: 600px) {
+  #projects {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #welcome-section {
+    font-size: 2em;
+  }
 }
