@@ -2,6 +2,27 @@ body {
   margin: 0;
 }
 
+
+#navbar {
+  background: red;
+  width: 100vw;
+  height: 4vh;
+}
+
+
+#navbar ul{
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  /* padding: 0; */
+}
+
+#navbar li{
+  list-style: none;
+}
+
 :root {
   --welcome-section-height: 25vh;
 }
@@ -19,9 +40,12 @@ body {
 }
 
 #projects {
+  padding-left: 2em;
+  padding-right: 2em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2em;
   height: calc(100vh - var(--welcome-section-height));
 }
 
@@ -35,4 +59,9 @@ body {
 .project-tile {
   min-height: 200px;
   background: gray;
+}
+
+.project-tile p {
+  text-align: center;
+  font-size: 1.5em;
 }
